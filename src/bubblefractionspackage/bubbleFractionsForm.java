@@ -1,8 +1,8 @@
 package bubblefractionspackage;
 
-public class bubbleFractionsForm extends javax.swing.JFrame {
+public class BubbleFractionsForm extends javax.swing.JFrame {
 
-    public bubbleFractionsForm() {
+    public BubbleFractionsForm() {
         initComponents();
     }
 
@@ -15,7 +15,7 @@ public class bubbleFractionsForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        bubbleFractionsPanel1 = new bubblefractionspackage.bubbleFractionsPanel();
+        bubblePanel1 = new bubblefractionspackage.BubblePanel();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         openMenuItem = new javax.swing.JMenuItem();
@@ -32,17 +32,11 @@ public class bubbleFractionsForm extends javax.swing.JFrame {
         aboutMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        javax.swing.GroupLayout bubbleFractionsPanel1Layout = new javax.swing.GroupLayout(bubbleFractionsPanel1);
-        bubbleFractionsPanel1.setLayout(bubbleFractionsPanel1Layout);
-        bubbleFractionsPanel1Layout.setHorizontalGroup(
-            bubbleFractionsPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 402, Short.MAX_VALUE)
-        );
-        bubbleFractionsPanel1Layout.setVerticalGroup(
-            bubbleFractionsPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 281, Short.MAX_VALUE)
-        );
+        setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
+        setForeground(java.awt.Color.lightGray);
+        setPreferredSize(new java.awt.Dimension(1280, 680));
+        getContentPane().add(bubblePanel1, java.awt.BorderLayout.CENTER);
 
         fileMenu.setMnemonic('f');
         fileMenu.setText("File");
@@ -107,27 +101,12 @@ public class bubbleFractionsForm extends javax.swing.JFrame {
 
         setJMenuBar(menuBar);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bubbleFractionsPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bubbleFractionsPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
         System.exit(0);
     }//GEN-LAST:event_exitMenuItemActionPerformed
-
-    private void bubblePanelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bubblePanelMouseMoved
-        //bubblePanel.moveBubbles();
-    }//GEN-LAST:event_bubblePanelMouseMoved
 
     /**
      * @param args the command line arguments
@@ -146,26 +125,26 @@ public class bubbleFractionsForm extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(bubbleFractionsForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BubbleFractionsForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(bubbleFractionsForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BubbleFractionsForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(bubbleFractionsForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BubbleFractionsForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(bubbleFractionsForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BubbleFractionsForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new bubbleFractionsForm().setVisible(true);
+                new BubbleFractionsForm().setVisible(true);
             }
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem aboutMenuItem;
-    private bubblefractionspackage.bubbleFractionsPanel bubbleFractionsPanel1;
+    private bubblefractionspackage.BubblePanel bubblePanel1;
     private javax.swing.JMenuItem contentsMenuItem;
     private javax.swing.JMenuItem copyMenuItem;
     private javax.swing.JMenuItem cutMenuItem;
