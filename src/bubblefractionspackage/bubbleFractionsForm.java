@@ -15,6 +15,8 @@ public class BubbleFractionsForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        splashScreen = new javax.swing.JLabel();
+        scoreLabel = new javax.swing.JLabel();
         bubblePanel1 = new bubblefractionspackage.BubblePanel();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
@@ -36,7 +38,25 @@ public class BubbleFractionsForm extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
         setForeground(java.awt.Color.lightGray);
         setPreferredSize(new java.awt.Dimension(1280, 680));
-        getContentPane().add(bubblePanel1, java.awt.BorderLayout.CENTER);
+        getContentPane().setLayout(null);
+
+        splashScreen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/splashBubble.png"))); // NOI18N
+        splashScreen.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                splashScreenMouseClicked(evt);
+            }
+        });
+        getContentPane().add(splashScreen);
+        splashScreen.setBounds(0, 0, 1280, 670);
+
+        scoreLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        scoreLabel.setText("Score: ");
+        getContentPane().add(scoreLabel);
+        scoreLabel.setBounds(1120, 50, 90, 26);
+
+        bubblePanel1.setBackground(new java.awt.Color(190, 65, 99));
+        getContentPane().add(bubblePanel1);
+        bubblePanel1.setBounds(0, 0, 1280, 665);
 
         fileMenu.setMnemonic('f');
         fileMenu.setText("File");
@@ -108,6 +128,11 @@ public class BubbleFractionsForm extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_exitMenuItemActionPerformed
 
+    private void splashScreenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_splashScreenMouseClicked
+        splashScreen.setVisible(false);
+        bubblePanel1.startGame();
+    }//GEN-LAST:event_splashScreenMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -158,5 +183,7 @@ public class BubbleFractionsForm extends javax.swing.JFrame {
     private javax.swing.JMenuItem pasteMenuItem;
     private javax.swing.JMenuItem saveAsMenuItem;
     private javax.swing.JMenuItem saveMenuItem;
+    private javax.swing.JLabel scoreLabel;
+    private javax.swing.JLabel splashScreen;
     // End of variables declaration//GEN-END:variables
 }

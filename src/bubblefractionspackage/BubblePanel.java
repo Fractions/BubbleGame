@@ -62,7 +62,7 @@ public class BubblePanel extends JPanel{
         startButton.setOpaque(true);
         startButton.setBounds(390, 400, 500, 100);
         startButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        this.add(startButton);
+        //this.add(startButton);
         startButton.addMouseListener(new java.awt.event.MouseAdapter() {
                 public void mousePressed(java.awt.event.MouseEvent evt2){
                     startGame();
