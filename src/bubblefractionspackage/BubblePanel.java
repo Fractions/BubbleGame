@@ -207,7 +207,7 @@ public class BubblePanel extends JPanel{
                     }
                 }
                 try {
-                    Thread.sleep(25);
+                    Thread.sleep(65);
                 } catch (InterruptedException ex) {
                     Logger.getLogger(BubblePanel.class.getName()).log(Level.SEVERE, null, ex);
                 }

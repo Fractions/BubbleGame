@@ -16,6 +16,7 @@ public class BubbleFractionsForm extends javax.swing.JFrame {
     private void initComponents() {
 
         splashScreen = new javax.swing.JLabel();
+        backButton = new javax.swing.JLabel();
         scoreLabel = new javax.swing.JLabel();
         bubblePanel1 = new bubblefractionspackage.BubblePanel();
         menuBar = new javax.swing.JMenuBar();
@@ -48,6 +49,10 @@ public class BubbleFractionsForm extends javax.swing.JFrame {
         });
         getContentPane().add(splashScreen);
         splashScreen.setBounds(0, 0, 1280, 670);
+
+        backButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/back.png"))); // NOI18N
+        getContentPane().add(backButton);
+        backButton.setBounds(20, 20, 70, 53);
 
         scoreLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         scoreLabel.setText("Score: ");
@@ -169,6 +174,7 @@ public class BubbleFractionsForm extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem aboutMenuItem;
+    private javax.swing.JLabel backButton;
     private bubblefractionspackage.BubblePanel bubblePanel1;
     private javax.swing.JMenuItem contentsMenuItem;
     private javax.swing.JMenuItem copyMenuItem;
